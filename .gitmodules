@@ -1,0 +1,3 @@
+[submodule "nginx-certbot"]
+	path = nginx-certbot
+	url = https://github.com/guillerDev/nginx-certbot.git
