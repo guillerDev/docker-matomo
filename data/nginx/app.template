@@ -1,4 +1,4 @@
-upstream app-handler {
+upstream php-handler {
 	server app:9000;
 }
 
@@ -26,7 +26,5 @@ server {
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
-    include config/php.conf;
-
-
+    include /etc/nginx/conf.d/config/php.conf;
 }
